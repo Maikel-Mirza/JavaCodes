@@ -1,0 +1,31 @@
+Solution 1 - Calendar Application
+
+    Code Overview: This solution creates a simple calendar application using Java Swing. It displays a calendar for the current month, allowing users to navigate to the previous and next months using buttons. The calendar is presented with the days of the week at the top and the dates for the current month in a grid layout.
+
+    Key Components and How They Work:
+
+        CalendarPanel class: This class represents the main panel for the calendar. It has a JLabel to display the current month and year, a JPanel for the days of the week, and another JPanel for the dates of the current month.
+
+        updateCalendar method: This method updates the calendar display based on the current month and year. It calculates the first day of the month, the start day of the week, and the last day of the month. It then populates the days panel with the appropriate date labels, formatting them differently for days in the current month and days in the previous/next months (displayed in gray).
+
+        priorButton and nextButton actions: These actions are triggered when the user clicks the "Prior" or "Next" buttons. They modify the calendar instance, update the displayed month, and call the updateCalendar method to refresh the calendar.
+
+        dayNamesPanel: This panel displays the day names (Sun, Mon, Tue, etc.) at the top of the calendar, helping users identify the columns corresponding to each day of the week.
+
+    Reflection: This solution successfully creates a basic calendar application, but it has limited interactivity. It lacks the ability to select specific dates or perform more advanced actions. The code follows a structured layout using Swing components to display the calendar in a readable format. It's suitable for displaying a simple calendar but may require additional features for more advanced use cases.
+
+Solution 2 - Virtual Keyboard Application
+
+    Code Overview: This solution creates a virtual keyboard using Java Swing. The keyboard layout resembles a standard QWERTY keyboard with additional buttons for special characters. The keys are organized in a grid layout, and the keyboard includes a text area to display the pressed keys. Keys are highlighted in green when the mouse hovers over them.
+
+    Key Components and How They Work:
+
+        MyVirtualKeyboardPanel class: This class represents the main panel for the virtual keyboard. It includes a JTextArea to display the pressed keys and a grid layout to arrange the key buttons.
+
+        createKeyboardPanel method: This method creates the layout of the keyboard, using a two-dimensional array of strings to represent the key labels. It uses JButton components for each key and customizes the layout using GridBagLayout. It also defines a KeyButtonListener to handle key presses and a KeyButtonMouseListener to highlight keys on mouse hover.
+
+        KeyButtonListener class: This class implements the ActionListener interface and is responsible for appending the pressed key to the text area when a key button is clicked.
+
+        KeyButtonMouseListener class: This class extends MouseAdapter and provides methods to change the background color of key buttons when the mouse enters or exits the button area, creating a green highlight effect.
+
+    Reflection: This solution creates a functional virtual keyboard with a basic UI. Users can click on the keys, and the pressed keys are displayed in the text area. The highlight effect on key hover improves the user experience. However, the keyboard lacks some advanced features, such as handling special key actions (e.g., Backspace, Enter), and it does not support advanced text input (e.g., handling Shift for capital letters). This solution serves as a simple virtual keyboard and can be enhanced to support more features.

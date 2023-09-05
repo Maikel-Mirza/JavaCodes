@@ -1,0 +1,55 @@
+Week 4 Notes from class lecture Date: June 10th 2023:
+----------------------------------------------------
+
+Object-oriented programming(OOP) -> involves programming using objects.
+
+Computer programming is taking the real life human problem and model it in my program using the skills and languages on programming.
+
+The entities in real world problems are modeled in programming as objects. An Object represents an entity in the real world that can be distinctly identified.
+i.e. - Water can be modeled in programming as an object.
+     - A building can be an object that represents a real entity
+     - A plant can be an entity
+     - A student can be an object	 	
+
+These objects can then be reused as many times as you want. This is crucial because of efficiency.
+
+***Each object must have a unique identity, state, behavior. For example a desk has a unique identity as being a desk and not a chair for example. 
+
+Object State:
+The state of the object is represented by data fields with their current values(size, shape, color and weight)
+-> A circle object, for example is represented by a radius
+
+Object Behaviour:
+- Also know as its actions is defined by methods. 
+- A circle object may invoke getArea() to return its area and getPerimeter() to return its perimeter.
+
+Defining Classes for objects:
+-How can I identify the identity, state and behavior of the objects. You do this using classes. A class is a blueprint, template, or contract that defines what an objects data fields and methods will be. 
+Additionally, class provides access to a special type named constructors, which are invoked to creat a new object.
+An object class is the apple pie recipe and the apple is the object itself.
+
+Static method: The method does not do anything with the object. Static methods are a stand alone object that has nothing to do with an object.
+An instance method: is used to represent a real object, to perform a calculation.
+
+Once a class has been created. You can initialize this class in your program by declaring its name followed by the defined variable name. 
+
+Seperate my classes(the classes I create) from the application classes(the classes created in the main function that access the classes I created)
+
+- In objects data and methods can be accessed through the dot operator (.) via the object's reference variable.
+
+Methods that do not access data fields should be defined as static. Methods that do access data fields(other variables and methods outside itself) do not.
+
+Visibility Modifiers:
+- if it is not defined that means they are private by default. 
+- can choose to defined the visibility modifier as public so that it can be visible and accessible everywher even outside the package.
+- if you set it as private, no one can access the methods outside the class.
+
+class, consructors, methos are normally set as public and data fields to be private including static fields. This prevents users from accidentally changing the program, certain aspects of the code like variables you dont want to change. For example when making a specific calculation where the values need to be constant.
+
+Primitive type:
+- int i = 1; //the value of i is stored somewhere in memory
+
+Object type:
+the object name referes by reference to some location in memory.
+
+

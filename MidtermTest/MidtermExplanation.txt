@@ -1,0 +1,119 @@
+1) (Class Name: MyArray, Java File Name: MyArray.java)
+
+Here's an explanation of the key components and how the code works:
+
+    int[] counts = new int[1001];: This line declares an integer array called counts with a size of 1001. This array is used to store the occurrences of each number entered by the user. The index of the array represents the number, and the value at that index represents the count of occurrences.
+
+    Scanner scanner = new Scanner(System.in);: This line creates a Scanner object to read input from the user.
+
+    int num = scanner.nextInt();: This line reads the first integer entered by the user and stores it in the variable num.
+
+    while (num != 0) { ... }: This is a while loop that continues until the user enters 0. Inside the loop, the code increments the count of the entered number by one using counts[num]++. It then reads the next integer from the user using num = scanner.nextInt();.
+
+    for (int i = 1; i <= 1000; i++) { ... }: This is a for loop that iterates from 1 to 1000. Inside the loop, it checks if the count of a number is greater than 0 using counts[i] > 0. If it is, it determines whether to print "time" or "times" based on the count using the ternary operator. It then prints the number, count, and "time" or "times" using System.out.println().
+
+    scanner.close();: This line closes the Scanner to release the resources.
+
+Sample Run:
+
+Enter the integers between 1 and 1000: 2 5 6 5 4 3 23 43 2 0
+
+Output:
+2 occurs 2 times
+3 occurs 1 time
+4 occurs 1 time
+5 occurs 2 times
+6 occurs 1 time
+23 occurs 1 time
+43 occurs 1 time
+
+In this example, the user entered a sequence of integers between 1 and 1000. The program counts the occurrences of each number and displays the result.
+
+
+
+
+2) (Class Name: Rectangle, Java File Name: Rectangle.java)
+Here's an explanation of the key components and how the code works:
+
+    private double width; and private double height;: These are private instance variables that store the width and height of the rectangle.
+
+    private String color; and private boolean filled;: These are private instance variables that store the color and filled status of the rectangle.
+
+    The class provides constructors and accessor/mutator methods (getWidth(), setWidth(), getHeight(), setHeight(), getColor(), setColor(), isFilled(), setFilled()) to get and set the values of the rectangle's properties.
+
+    getPerimeter() method calculates and returns the perimeter of the rectangle using the formula 2 * (width + height).
+
+    getArea() method calculates and returns the area of the rectangle using the formula width * height.
+
+    toString() method overrides the default toString() method of the Object class to provide a string representation of the rectangle object. It includes the width, height, color, and filled status of the rectangle.
+
+    The main method is the entry point of the program. It prompts the user to enter the width, height, color, and filled status of the rectangle using Scanner.
+
+    The program creates a Rectangle object with the specified width and height, sets the color and filled status using the user input, and assigns it to the rectangle variable.
+
+    The program then calls toString() on the rectangle object to display the rectangle's details. It also calls getArea() and getPerimeter() to calculate and display the area and perimeter of the rectangle.
+
+    Finally, the Scanner is closed to release the resources.
+
+Sample Run:
+
+Enter the width of the rectangle: 5.6
+Enter the height of the rectangle: 7.8
+Enter the color of the rectangle: Blue
+Is the rectangle filled? (true/false): true
+
+Output:
+Rectangle: width = 5.6, height = 7.8, color = Blue, filled = true
+Area: 43.68
+Perimeter: 27.6
+
+In this example, the user enters the width as 5.6, height as 7.8, color as "Blue," and filled status as true. The program creates a Rectangle object with the specified values, sets the color and filled status, and then displays the rectangle's details, area, and perimeter.
+
+
+
+3) (Class Name: Align, Java File Name: Align.java)
+
+Here's an explanation of the key components and how the code works:
+
+    The main method is the entry point of the program. It creates a JFrame object named frame with the title "Align."
+
+    The code creates several JPanel objects (mainPanel, panel1, panel2, panel3) to organize the layout of the components in the frame.
+
+    Components such as JLabel, JTextField, JCheckBox, and JButton are created to represent labels, text fields, checkboxes, and buttons, respectively.
+
+    The components are added to the appropriate panels using layout managers (FlowLayout, GridLayout).
+
+    The panels are added to the mainPanel using the BorderLayout manager, with panel1 in the north, panel2 in the center, and panel3 in the south.
+
+    The mainPanel is added to the frame's content pane.
+
+    Action listeners are added to the "OK," "Cancel," and "Help" buttons to handle button clicks. When a button is clicked, a corresponding message is printed to the console.
+
+    An action listener is added to the "Snap to Grid" checkbox to handle checkbox state changes. The state is stored in the snapToGridEnabled variable, and a message is printed to the console.
+
+    An action listener is added to the "Show Grid" checkbox to handle checkbox state changes. The state is stored in the showGridEnabled variable. When the checkbox state changes, the paintComponent method in the Grid class is called, which is responsible for drawing the grid.
+
+    The Grid class is a nested class that extends JPanel. It overrides the paintComponent method to draw a grid when the "Show Grid" checkbox is enabled. The grid is drawn using the Graphics object, and its color and size are specified.
+
+    The frame's default close operation is set to exit the program when the frame is closed.
+
+    The frame is packed, and then set to be visible.
+
+Sample Run:
+
+Upon running the program, a GUI window titled "Align" will appear. It will have the following components:
+
+    Two labels: "X Coordinate" and "Y Coordinate"
+    Two text fields for entering X and Y coordinates
+    Two checkboxes: "Snap to Grid" and "Show Grid"
+    Three buttons: "OK," "Cancel," and "Help"
+
+If the user interacts with the checkboxes or buttons, the program will print messages to the console. For example:
+
+    Clicking the "Snap to Grid" checkbox will display "Snap to Grid: true" or "Snap to Grid: false" in the console.
+    Clicking the "Show Grid" checkbox will display "Show Grid: true" or "Show Grid: false" in the console.
+    Clicking the "OK" button will display "OK button clicked" in the console.
+    Clicking the "Cancel" button will display "Cancel button clicked" in the console.
+    Clicking the "Help" button will display "Help button clicked" in the console.
+
+The grid will be displayed or hidden based on the state of the "Show Grid" checkbox.

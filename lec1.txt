@@ -1,0 +1,15 @@
+As a developer you're not only responsible for writing code, but also just as importantly fixing the errors in your code.
+
+Syntax errors:
+Your code does not compile because there are incoherences with the code and the rules and written grammer of the language.
+
+
+
+Runtime Errors:
+You can compile the code but you cannot execute with the java virtual machine.
+This is called a runtime error because it happens at run time not compile time
+for example System.out.println(1/0);
+
+
+Logic errors:
+Occurs when a program does not perform the way it is intended to.

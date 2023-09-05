@@ -1,0 +1,75 @@
+Encapsulation:
+- Data hiding because we dont want users to have access to certain fields that we dont want to have changed by mistake, which causes data corruption.
+
+Week 5 Notes begin:
+-------------------
+- there are 2 pre-recorded videos from previous classes posted.
+
+Inheritance:
+-----------
+- One of the main pillars of OOP. 
+- Allows one to define new classes from existing classes. (This is the concept and the motivation behind inheritance)
+- The class members will be inherited into the new class.
+
+Superclasses and Subclasses:
+-----------------------------
+-Existing class is the superclass, and the new class is the subclass.
+- Superclasses tend to be "more general" and subclasses we have the general fields and methods but it's purpose is to have its own specific fields. 
+	Subclass is not a subset of a superset. Its a specific case that inherits the classes of the superclass but is only a specic case.
+
+-create a roadmap for you progrmas.
+i.g GeometricShape (name of class)
+
+
+
+- the keyword this. for example will allow me to refer to a class inside another class, if I want to reference something from another class.
+
+- use the keyword "extends" when inheriting all the members and methods from the superclass to the subclass.
+
+-Use setter and getter methods to use and manipulate the fields.
+
+- can print with sytem print by using super.toString();
+- can only use the super keyword from the direct super class not the super super class.
+
+** research java chain rule. 
+By default the no-argument constructor is called first by the superclass.
+
+Overridding:
+-----------
+-> if you want to use the same method with the same signiture and value. This is called method overridding. Keep the same header of the method but change the implementation of the method.
+-> Overriding is optional it is not mandatory.
+-> use the keyword to avoid creating any errors that not including it would cause, because it will be easy to identify errors related to the override.
+
+Overloading:
+-----------
+-> Overloading is when you add or alter a superclass method in some way.
+
+** understand the difference between overridding and overloading. Practice with code.
+
+direct superclass:
+-----------------
+-The superclass from the which the subclass explicitly inherits.
+
+indirect superclass:
+-------------------
+-Any class above the direct superclass in the class hierarchy
+
+
+Object class:
+----------------
+-In the hierachy of the class inheritance in Java we have at the root the Object class. Every single class in Java will be directly or indirectly a subclass of the object class.
+
+
+Polymorphism:
+-------------
+-means that a variable of a supertype can refer to a subtype object.
+
+
+Assignment 2
+------------
+1) Combining everythign we have seen so far including arrays.
+2) design and implement a class called my integer. Define a method to call all the methods you define in my integer class.
+3) make a triangle class that extends geometric shape class. Do not change the geometricShape class. Do not submit the geometricShape class only the triangle class.
+	The triangle class that I make needs to work with the GeometricShape class.
+	Write a main method to runs the applications.
+4) make a reflection video and provide more detail.

@@ -1,0 +1,41 @@
+Methods:
+-Usually you define methods first, either predefined or you can define your own method.
+int method(x, y); //the value of these arguments willed be passed into the formal parameters and the it performs the operation and returns the result.
+
+if a method/function returns nothing you need to set the return type to void
+
+function can have no parameters as well.
+
+anywhere in your code that you see that there is redundancy(you've written the code multiple times), bring that code into a single method so that you can improve the efficiency of the code.
+
+Arrays:
+//there are no static or dynamic arrays in java unlike c, c++, arrays static
+Declaring Array Variables:
+datatype[] arrayRefVar;
+datatype arrayRefVar[];
+double[] myList = new double[10];
+
+Creating Arrays:
+Example:
+arrayRefVar = new datatype [arraySize];
+myList = new double[10];
+** you can declare and create the array at the same time
+
+Can intialize arrays with rand
+
+Assignment:
+Q1)-we assume that the user defines a positive integer we dont need extra conditions to ensure
+   - the sample run output format is a requirement!. My program needs to produce the same result.
+
+Q2) display numbers in sorted order * just like the MethodDemo code examples. can use any sort function. use if statements to store the 3 numbers and sort the results.
+
+Q3) we assume user enter integer dont need to prompt for it. Polindrame is when it reads the same from right to left as left to right.
+make sure output is exactly like its written.
+
+** we have to create a 15 min video explaining the answers that we made to the solutions to the assignment qustions. // A) this is the 1st deliverable
+- dont just read the code back, explain the meaning of the code.
+upload the link for your video in the comment box.
+
+B) can only submit .java files ** submit only the .java files any other format will receive a grade of 0. // B) 2nd deliverable
+* can resubmit the assignment once if nescessary (2 attempts total)
+

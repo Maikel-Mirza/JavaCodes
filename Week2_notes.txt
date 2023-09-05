@@ -1,0 +1,52 @@
+Week 2 notes:
+--------------------
+
+The identifier is nothing more than a name. A sequence of characters of numbers, letters, an underscore(_), or a dollar sign ($). It cannot start with a digit. Not more than 10 characters long. 
+
+Keywords are reserved for use by Java and are always spelled with all lowercase letters. 
+
+Variables:
+1st step is to declare a variable. Specify what is the type of value that is going to get stored in that variable.
+	example: int x;
+characters are specified with single quotes.
+
+You can define constants by declaring a datatype before the contants name. 
+When declaring constants use all uppercase, unlike normal variables. This is the java naming convention.
+if there are multiple words in a constants name than make sure they are both uppercase and seperated by underscore.
+
+The difference between datatypes is the amount of data or bits that it can store.
+
+
+String type:
+represents a sequence of characters. Use the data type called String.
+String message = "Welcome to Java";
+*String data type is not a primitive data type like int, char, double.
+
+A feature of string is (+) operator, what is does is it concatonates multiple strings together. You can concatonate strings with as make data types as you want and the final result will be a string.
+
+*as homework try the code in the Note section of the week2 pdf. Try different types of conditionals and see the results.
+
+If you have a statement that you want to run multiple times than you should use and iterator loop like while loop.
+	while(count <100){
+		system.out.println("Welcome to Java444");
+	}
+
+do while loop:
+do{
+	
+}while(condition = true);
+
+for loop:
+for(initial-action; loop-continuation-condition; action-after-each-iteration){
+
+}
+
+
+switch statements:
+-very specific cases in which this iterator is used. The same sytax as c, c++
+
+Type Casting:
+casting from one type to another type
+int i = (int)1.0;
+
+*There are no assignments in this course, you must do the practice assignments in order to learn and pass the exam.

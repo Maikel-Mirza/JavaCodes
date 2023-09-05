@@ -1,0 +1,48 @@
+    Scores.java:
+    The Scores program calculates grades for students based on their scores. It uses an array to store the scores and follows specific rules to assign grades. Here's how it works:
+
+    The program starts by asking the user how many students there are. This information helps determine the size of the array.
+    It then prompts the user to enter the scores of each student, which are stored in the array.
+    Next, the program finds the highest score among all the students by comparing each score with the current highest score and updating it if a higher score is found.
+    Using the highest score as a benchmark, the program assigns grades to each student based on their score using a set of conditions.
+    Finally, it displays the grades for each student.
+
+Key Components:
+
+    main method: The starting point of the program. It handles user input, invokes other methods, and displays the results.
+    calculateGrades method: Takes the array of scores and the highest score as inputs. It iterates over each score, compares it with the highest score, and assigns the appropriate grade based on certain conditions.
+
+    MyInteger.java:
+    The MyInteger class represents a special integer and provides methods to perform various operations on it. It focuses on determining whether the number is even or odd and comparing it with other numbers or MyInteger objects. Here's how it works:
+
+    Each MyInteger object has an integer value stored internally.
+    The constructor is used to create a MyInteger object and initialize it with a specified integer value.
+    The class provides getter methods to retrieve the stored integer value.
+    It offers instance methods (isEven and isOdd) that check if the internal value is divisible by 2 without a remainder, determining whether it is even or odd.
+    Additionally, static methods (isEven and isOdd) are available to check if a given integer value is even or odd.
+    The class also provides methods (equals) to compare the internal value with either an integer or another MyInteger object.
+
+Key Components:
+
+    isEven and isOdd methods: Instance methods that perform calculations on the stored integer value, checking if it is divisible by 2 without a remainder, indicating whether it is even or odd.
+    Static methods (isEven and isOdd): Perform calculations on a specified integer value, determining if it is even or odd.
+    equals methods: Compare the stored integer value with either an integer or another MyInteger object to check for equality.
+
+    Triangle.java:
+    The Triangle class represents a geometric triangle, providing methods to calculate its properties such as the perimeter and area. It also includes a method to generate a string description of the triangle. Here's how it works:
+
+    The class has three data fields (side1, side2, and side3) to store the lengths of the triangle's sides.
+    It includes constructors to create a default triangle or a triangle with specific side lengths.
+    Getter methods are provided to access the values of the triangle's sides.
+    The getPerimeter method calculates the sum of the three side lengths to determine the perimeter of the triangle.
+    The getArea method applies Heron's formula to calculate the area based on the triangle's side lengths.
+    The toString method generates a string representation of the triangle, providing the values of its side lengths.
+
+Key Components:
+
+    Data fields: side1, side2, and side3 store the lengths of the triangle's sides.
+    Constructors: Create a triangle object with default side lengths or specific side lengths.
+    Getter methods: Retrieve the values of the triangle's side lengths.
+    getPerimeter method: Calculate the sum of the side lengths to obtain the triangle's perimeter.
+    getArea method: Use Heron's formula to calculate the area based on the side lengths.
+    toString method: Generate a string representation of the triangle, displaying the values of its side lengths.
